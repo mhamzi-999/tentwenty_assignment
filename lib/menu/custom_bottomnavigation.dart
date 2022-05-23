@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:tentwenty/views/watch_page/watch_page.dart';
 
 import '../helpers/constants.dart';
 
@@ -38,6 +39,7 @@ class _CustomBottomNavigationState extends State<CustomBottomNavigation> {
 
           InkWell(
               onTap: () async {
+                CONSTANTS.navigateToScreen(context, WatchPage());
               },
               child: bottomItem(1,"Watch","watch")),
 
